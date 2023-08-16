@@ -26,6 +26,20 @@ Para tal efecto, se requiere:
 2.- Servidores de carga Azure tipo Blob
 3.- Cuentas de acceso con rol "BlobContributor" o si no es posible, instalación del software AZCopy.exe
 
+### Requerimientos
+
+A.- Servidor Windows preferentemente mayor a 2012
+B.- Acceso Blobs de Azure
+C.- Cuentas con privilegios.
+
+### Configuración
+
+Leer el archivo Config.txt
+
+### Uso / Contribución
+
+Si deseas colaborar con más ideas para este código puedes hacerlo a través de una una branch llamada develop.
+
 
 ### Ligas de Utilidad:
 
