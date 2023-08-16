@@ -31,4 +31,6 @@ Para tal efecto, se requiere:
 
 https://learn.microsoft.com/en-us/purview/use-network-upload-to-import-pst-files
 
+https://ricardolabs.sharepoint.com/sites/Tallerdeproductividadbasadaenherramientastecnolgicas
+
 
