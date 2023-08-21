@@ -47,4 +47,11 @@ https://learn.microsoft.com/en-us/purview/use-network-upload-to-import-pst-files
 
 https://ricardolabs.sharepoint.com/sites/Tallerdeproductividadbasadaenherramientastecnolgicas
 
+### Para consultar la liga donde ver un vídeo de demostración:
+
+https://utmedu-my.sharepoint.com/:v:/g/personal/al03003446_tecmilenio_mx/EXTcn1vzeMlPhmXGDpxfzl4B8Mc5n_80qnSqU4RXRTN56w?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZyIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19&e=J78sbO
+
+
+
+
 
