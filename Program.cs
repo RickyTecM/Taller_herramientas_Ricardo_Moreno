@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Text;
+
 
 namespace AZUpload
 { 
@@ -7,10 +9,11 @@ namespace AZUpload
      {
         private static int xMenuChoiceA;
 
+
         static void Main(string[] args)
         {
-                   
-                Console.WriteLine("Upload PSTs to Microsoft Azure Blob Storage using SAS Token");
+
+            Console.WriteLine("Upload PSTs to Microsoft Azure Blob Storage using SAS Token");
                 StringBuilder sb = new StringBuilder();
                 sb.Append("log something");
                 // flush every 20 seconds as you do it
@@ -19,7 +22,7 @@ namespace AZUpload
             int xMenuChoiceA = 0;
             do
             {
-                
+
                 while ((xMenuChoiceA > -1) & (xMenuChoiceA < 3))
                 {
 
@@ -32,21 +35,34 @@ namespace AZUpload
                     Console.WriteLine("Please enter an option 1 to 3...");
                     xMenuChoiceA = int.Parse(Console.ReadLine());
 
-                    switch (xMenuChoiceA) {
-                    '1'(
-                    F:\AzCopy_Script\azcopy copy "F:\CrashPlan_Report\PSTs_RestoredFromCP\user" "https://724c89b02b4e4093b6571e3.blob.core.windows.net/ingestiondata?sv=2015-04-05&sr=c&si=IngestionSasForAzCopy202301051759063090&sig=SBC%2Fy%2BbdrnQPSsOtWjQsorbrlabNbPb61oKYlsyGlc8%3D&se=2023-09-09T17%3A55%3A50Z"--check - length = false
-                        );
-                    '2'(
-                    F:\AzCopy_Script\azcopy copy "F:\CrashPlan_Report\PSTs_RestoredFromCP\user\*pst" "https://724c89b02b4e4093b6571e3.blob.core.windows.net/ingestiondata?sv=2015-04-05&sr=c&si=IngestionSasForAzCopy202301051759063090&sig=SBC%2Fy%2BbdrnQPSsOtWjQsorbrlabNbPb61oKYlsyGlc8%3D&se=2023-09-09T17%3A55%3A50Z"--check - length = false
-                        );
-                    '3'{
-                        break;
-                        } 
+                    switch (xMenuChoiceA) 
+                     {
+                        case 1: 
+                                var info = new System.Diagnostics.ProcessStartInfo(@"C:\temp\AZCopy\azcopy.exe")
+                                {
+                                    ArgumentList = {
+                                 "copy",
+                                 @"D:\Temp\PST\RicardoLab1@ricardolabs.info\*pst",
+                                 "https://rickystore2.blob.core.windows.net/rickyblob2?sp=rwl&st=2023-08-19T19:45:49Z&se=2023-08-27T03:45:49Z&spr=https&sv=2022-11-02&sr=c&sig=STAczOUfByqMCa2jAjej5Y2XUmcoWDYjrhe6eHpc0zY%3D",
+                                 "--check-length=false"
+                                                }
+                                };
+                                Process.Start(info);
+                       break;
 
-                    default { Write - Host "Please make a selection." }
+                    case 2:
+                       Console.WriteLine("Parameter is under construction");
+                       break ;
+                    
+                     case 3:
+                       Console.WriteLine("Exiting script, time to say goodbye!");
+                       break;
 
-                }
-                }
+
+                    }
+                    }
+                
+              
             } while (xMenuChoiceA != 3);
 
         }
